@@ -1,0 +1,7 @@
+C:\Development\Projects\KittyKitchen\KittyKitchen\bin\Debug\KittyKitchen.exe.config
+C:\Development\Projects\KittyKitchen\KittyKitchen\bin\Debug\KittyKitchen.exe
+C:\Development\Projects\KittyKitchen\KittyKitchen\bin\Debug\KittyKitchen.pdb
+C:\Development\Projects\KittyKitchen\KittyKitchen\obj\Debug\KittyKitchen.csprojAssemblyReference.cache
+C:\Development\Projects\KittyKitchen\KittyKitchen\obj\Debug\KittyKitchen.csproj.CoreCompileInputs.cache
+C:\Development\Projects\KittyKitchen\KittyKitchen\obj\Debug\KittyKitchen.exe
+C:\Development\Projects\KittyKitchen\KittyKitchen\obj\Debug\KittyKitchen.pdb
