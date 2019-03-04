@@ -16,6 +16,7 @@ namespace KittyKitchen
             cats.Add(new LazyCat("Mister Anderon", 13, "orange"));
             cats.Add(new CrankyCat("Chairman", 8, "grey"));
             cats.Add(new LazyCat("Chubington Mars Mellow III", 2, "orange"));
+            cats.Add(new LazyCat("Nirvana", 4, "grey"));
 
             var catLevelService = new CatLevelsService();
           
@@ -38,7 +39,7 @@ namespace KittyKitchen
                 switch (int.Parse(response))
                 {
                     case 1:
-                        Console.WriteLine("Which cat would you like to pet? 1: Tank, 2: Dozer, 3: Mister Anderson, 4: Chairman, 5: Chubs");
+                        Console.WriteLine("Which cat would you like to pet? 1: Tank, 2: Dozer, 3: Mister Anderson, 4: Chairman, 5: Chubs, 6: Nirvana");
                         var catToPet = Console.ReadLine();
 
                         switch (int.Parse(catToPet))
@@ -51,31 +52,38 @@ namespace KittyKitchen
                                 }
                                 break;
                             case 2:
-                                if (!catLevelService.CheckOverBoundsSingleCat(cats[0]))
+                                if (!catLevelService.CheckOverBoundsSingleCat(cats[1]))
                                 {
                                     cats[1].Pet();
                                     Cat.MakeRandomlySad(cats, cats[1]);
                                 }
                                 break;
                             case 3:
-                                if (!catLevelService.CheckOverBoundsSingleCat(cats[0]))
+                                if (!catLevelService.CheckOverBoundsSingleCat(cats[2]))
                                 {
                                     cats[2].Pet();
                                     Cat.MakeRandomlySad(cats, cats[2]);
                                 }
                                     break;
                             case 4:
-                                if (!catLevelService.CheckOverBoundsSingleCat(cats[0]))
+                                if (!catLevelService.CheckOverBoundsSingleCat(cats[3]))
                                 {
                                     cats[3].Pet();
                                     Cat.MakeRandomlySad(cats, cats[3]);
                                 }
                                 break;
                             case 5:
-                                if (!catLevelService.CheckOverBoundsSingleCat(cats[0]))
+                                if (!catLevelService.CheckOverBoundsSingleCat(cats[4]))
                                 {
                                     cats[4].Pet();
                                     Cat.MakeRandomlySad(cats, cats[4]);
+                                }
+                                break;
+                            case 6:
+                                if (!catLevelService.CheckOverBoundsSingleCat(cats[5]))
+                                {
+                                    cats[5].Pet();
+                                    Cat.MakeRandomlySad(cats, cats[5]);
                                 }
                                 break;
                         }
