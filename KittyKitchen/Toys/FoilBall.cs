@@ -1,4 +1,4 @@
-﻿using System;
+﻿using KittyKitchen.Toys;
 
 
 namespace KittyKitchen
@@ -7,7 +7,7 @@ namespace KittyKitchen
     {
         public int Play()
         {
-            return 20;
+            return ToysConstants.FoiLBallPlayPower;
         }
     }
 }

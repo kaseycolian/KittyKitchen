@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Food\FoodConstants.cs" />
     <Compile Include="Services\CatLevelsService.cs" />
     <Compile Include="Food\Beef.cs" />
     <Compile Include="Cats\Cat.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Toys\String.cs" />
     <Compile Include="Food\Treats.cs" />
+    <Compile Include="Toys\ToysConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -8,17 +8,8 @@ namespace KittyKitchen.UnitsTests
     [TestClass]
     public class PlayroomTests
     {
-        //private IToys mockIToys = new IToys();
-        //private IList<IToys> _toys = new List<IToys>();
+
         private Playroom mockPlayroom = new Playroom();
-
-        private CatNip mockCatNip = new CatNip();
-        private FluffyBall mockFluffyBall = new FluffyBall();
-        private FoilBall mockFoilBall = new FoilBall();
-        private LaserPointer laserPointer = new LaserPointer();
-        private Mouse mockMouse = new Mouse();
-        private String mockString = new String();
-
 
         [TestMethod]
         public void AddToys_MultipleToyTypesAddedToIToyList_ShouldBeSavedInList()
@@ -45,16 +36,12 @@ namespace KittyKitchen.UnitsTests
         [TestMethod]
         public void PlayWithToys_AddingEachTypeToList_ShouldExecuteEachTypeOfClassPlayMethodAndReturn115()
         {
-            // Should I test for hardcoded value of manually adding up return values 
-            // or test for it as below, which is a very large mimic of the PlayWithToys method
-            var toyArray = new Object[] { mockCatNip, mockFluffyBall, mockFoilBall, laserPointer, mockMouse, mockString };
-
-            var testAmount = 0;
-
-            foreach(var toy in toyArray)
-            {
-                testAmount += toy.Play();
-            }
+            var testAmount = Toys.ToysConstants.CatNipPlayPower + 
+                Toys.ToysConstants.FluffyBallPlayPower + 
+                Toys.ToysConstants.FoiLBallPlayPower +
+                Toys.ToysConstants.LaserPointerPlayPower + 
+                Toys.ToysConstants.MousePlayPower + 
+                Toys.ToysConstants.StringPlayPower;
 
             mockPlayroom.AddToys(new CatNip());
             mockPlayroom.AddToys(new FluffyBall());
@@ -66,9 +53,6 @@ namespace KittyKitchen.UnitsTests
             var actualAmount = mockPlayroom.PlayWithToys();
 
             Assert.AreEqual(testAmount, actualAmount);
-
-
-
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using KittyKitchen.Toys;
 
 namespace KittyKitchen
 {
@@ -9,7 +9,7 @@ namespace KittyKitchen
         {
             Console.WriteLine("We love fluffy balls!");
 
-            return 25;
+            return ToysConstants.FluffyBallPlayPower;
         }
     }
 }

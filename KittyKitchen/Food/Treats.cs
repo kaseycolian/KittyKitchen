@@ -1,4 +1,5 @@
 ﻿using System;
+using KittyKitchen.Food;
 
 namespace KittyKitchen
 {
@@ -7,7 +8,7 @@ namespace KittyKitchen
         public int Food()
         {
             Console.WriteLine("Thanks for the treats! We'll always have more, please.");
-            return 35;
+            return FoodConstants.TreatsFoodAmount;
         }
     }
 }

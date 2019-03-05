@@ -1,10 +1,12 @@
-﻿namespace KittyKitchen
+﻿using KittyKitchen.Toys;
+
+namespace KittyKitchen
 {
     public class LaserPointer : IToys
     {
         public int Play()
         {
-            return 35;
+            return ToysConstants.LaserPointerPlayPower;
         }
     }
 }
