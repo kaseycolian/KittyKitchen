@@ -5,7 +5,7 @@ namespace KittyKitchen
 {
     public class Playroom
     {
-        private IList<IToys> _toys;
+        public IList<IToys> _toys { get; set; }
 
         public Playroom()
         {
@@ -24,7 +24,7 @@ namespace KittyKitchen
             System.Console.WriteLine("Thanks for the toys!!!!");
             return amount;
         }
-
+        
         public void AddToys(IToys toy)
         {
             _toys.Add(toy);

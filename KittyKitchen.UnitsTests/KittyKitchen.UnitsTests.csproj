@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatLevelsServiceTests.cs" />
+    <Compile Include="PlayRoomTests.cs" />
     <Compile Include="CrankyCatTests.cs" />
     <Compile Include="LazyCatTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

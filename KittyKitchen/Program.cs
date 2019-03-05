@@ -178,6 +178,7 @@ namespace KittyKitchen
                                     }
 
                                     catLevelService.CheckOverBoundsAllCats(cats);
+                                    playroom.ClearToys();
 
                                     break;
                             }
