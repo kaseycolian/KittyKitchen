@@ -3,7 +3,12 @@
 namespace KittyKitchen
 {
     public class CrankyCat : Cat
+
     {
+        //public string name { get; set; }
+        //public int age { get; set; }
+        //public string color { get; set; }
+
         public CrankyCat (string name, int age, string color)
         {
             Name = name;

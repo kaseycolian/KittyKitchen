@@ -31,7 +31,7 @@ namespace KittyKitchen
             return HungerLevel += amount;
         }
 
-        public static List<Cat> MakeRandomlySad(List<Cat> cats, Cat catToExclude)
+        public static List<Cat> MakeRandomSadness(List<Cat> cats, Cat catToExclude)
         {
             foreach (var cat in cats)
             {

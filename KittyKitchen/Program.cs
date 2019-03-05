@@ -48,42 +48,42 @@ namespace KittyKitchen
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[0]))
                                 {
                                     cats[0].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[0]);
+                                    Cat.MakeRandomSadness(cats, cats[0]);
                                 }
                                 break;
                             case 2:
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[1]))
                                 {
                                     cats[1].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[1]);
+                                    Cat.MakeRandomSadness(cats, cats[1]);
                                 }
                                 break;
                             case 3:
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[2]))
                                 {
                                     cats[2].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[2]);
+                                    Cat.MakeRandomSadness(cats, cats[2]);
                                 }
                                     break;
                             case 4:
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[3]))
                                 {
                                     cats[3].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[3]);
+                                    Cat.MakeRandomSadness(cats, cats[3]);
                                 }
                                 break;
                             case 5:
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[4]))
                                 {
                                     cats[4].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[4]);
+                                    Cat.MakeRandomSadness(cats, cats[4]);
                                 }
                                 break;
                             case 6:
                                 if (!catLevelService.CheckOverBoundsSingleCat(cats[5]))
                                 {
                                     cats[5].Pet();
-                                    Cat.MakeRandomlySad(cats, cats[5]);
+                                    Cat.MakeRandomSadness(cats, cats[5]);
                                 }
                                 break;
                         }
