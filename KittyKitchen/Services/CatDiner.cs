@@ -11,6 +11,11 @@ namespace KittyKitchen
             _foodTypes = new List<IFoodTypes>();
         }
 
+        public IList<IFoodTypes> GetFoodTypeList()
+        {
+            return _foodTypes;
+        }
+
         public int DinnerTime()
         {
             var amount = 0;

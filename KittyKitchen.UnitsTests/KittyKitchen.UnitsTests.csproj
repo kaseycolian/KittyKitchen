@@ -54,6 +54,7 @@
     <Compile Include="CrankyCatTests.cs" />
     <Compile Include="LazyCatTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CatDinerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
