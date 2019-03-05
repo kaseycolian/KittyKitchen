@@ -5,11 +5,16 @@ namespace KittyKitchen
 {
     public class Playroom
     {
-        public IList<IToys> _toys { get; set; }
+        private IList<IToys> _toys { get; set; }
 
         public Playroom()
         {
             _toys = new List<IToys>();
+        }
+
+        public IList<IToys> GetToysList()
+        {
+            return _toys;
         }
 
         public int PlayWithToys()

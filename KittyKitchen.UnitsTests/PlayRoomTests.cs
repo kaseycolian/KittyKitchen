@@ -18,7 +18,7 @@ namespace KittyKitchen.UnitsTests
             mockPlayroom.AddToys(new Mouse());
             mockPlayroom.AddToys(new LaserPointer());
 
-            Assert.IsTrue(mockPlayroom._toys.Count == 3);
+            Assert.IsTrue(mockPlayroom.GetToysList().Count == 3);
         }
 
         [TestMethod]
@@ -29,7 +29,7 @@ namespace KittyKitchen.UnitsTests
 
             mockPlayroom.ClearToys();
 
-            Assert.IsTrue(mockPlayroom._toys.Count == 0);
+            Assert.IsTrue(mockPlayroom.GetToysList().Count == 0);
         }
 
 
